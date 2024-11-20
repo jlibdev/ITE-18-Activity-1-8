@@ -138,7 +138,7 @@ gui.add(parameters, 'spin').name("Spin")
 
 // Camera Controls
 const controls = new OrbitControls(camera, canvas)
-
+controls.enableDamping = true
 const tick = () =>{
     controls.update()
     renderer.render( scene , camera );
